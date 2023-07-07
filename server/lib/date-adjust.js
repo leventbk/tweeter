@@ -18,5 +18,8 @@ module.exports = () => {
     return tweet;
   });
   // Re-write the tweets with the new date values.
+  
+  ///////
+  // I need to wrap the code in a try-catch block to handle errors appropriately 
   fs.writeFileSync('server/data-files/initial-tweets.json', JSON.stringify(tweetsJSON, null, 2), { encoding: "utf8" });
 };
