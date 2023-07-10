@@ -1,6 +1,33 @@
 .nav {
-    font-family: Bungee;
+    display:flex;
+    position:fixed;
+    overflow: hidden;
+    justify-content: space-between;
     background-color: #4056A1;
     color: #FFFFFF;
-    margin: 0px 1.5em;
+    align-items: center;
+    padding: 1em 1.5em 0.75em 1.5em;
+    height:120px;
+}
+
+.logo {
+    font-family: Bungee;
+}
+
+.cta {
+    font-size: 0.7em;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Source Sans 3', sans-serif;
+}
+
+.arrow {
+    display: flex !important;
+    justify-content: center;
+    padding-top: 0.5em;
+    color:red;
+}
+.header {
+    display: grid;
+    justify-content: center;
 }
