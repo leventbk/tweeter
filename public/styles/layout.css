@@ -9,7 +9,6 @@ html {
 *, *:before, *:after {
   box-sizing: inherit;
 }
-
 /*
  * Global layout stuff
  */
@@ -20,7 +19,67 @@ body {
   font-size: 24px;
   font-family: 'Bungee','Source Sans 3', sans-serif;
 }
+main {
+  /* display: flex; */
+  /* height: 100vh; */
+  padding: 0em 5em;
+  background-color: wheat;
+}
 
 /*
  * Additional CSS can be defined below or in other CSS files, as per instructions
  */
+
+.header {
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+height: 520px;
+padding-top: 150px;
+/* align-items: center; */
+background-color: wheat;
+background-image: url("https://www.transparenttextures.com/patterns/arabesque.png");
+}
+
+.avatar {
+padding: 0em 2em;
+}
+
+.profile-name {
+  display:flex;
+  justify-content: center;
+  font-family: 'Source Sans 3', sans-serif;
+}
+
+.new-tweet {
+display: flex;
+flex-direction: column;
+justify-content: center;
+padding: 3em 0em;
+}
+
+#name {
+display: flex;
+font-family: 'Source Sans 3', sans-serif;
+background-color: transparent;
+border: none;
+border-bottom: 5px solid #545149;
+
+}
+.new-tweet-footer{
+  padding-top:0.5em;
+  
+  display: flex;
+
+}
+
+#submit-tweet-button {
+  display: flex;
+  flex-direction: column;
+  padding:0.2em 0.4em;
+  border:none;
+  background-color: #4056A1;
+  color:#fff;
+}
+
