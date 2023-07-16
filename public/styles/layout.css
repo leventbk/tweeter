@@ -6,7 +6,9 @@
 html {
   box-sizing: border-box;
 }
-*, *:before, *:after {
+*,
+*:before,
+*:after {
   box-sizing: inherit;
 }
 /*
@@ -17,7 +19,7 @@ body {
   color: #545149;
   background-color: #f4f1ec;
   font-size: 24px;
-  font-family: 'Bungee','Source Sans 3', sans-serif;
+  font-family: "Bungee", "Source Sans 3", sans-serif;
 }
 main {
   /* display: flex; */
@@ -31,55 +33,31 @@ main {
  */
 
 .header {
-display: flex;
-justify-content: center;
-align-items: center;
-flex-direction: column;
-height: 520px;
-padding-top: 150px;
-/* align-items: center; */
-background-color: wheat;
-background-image: url("https://www.transparenttextures.com/patterns/arabesque.png");
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 520px;
+  padding-top: 150px;
+  /* align-items: center; */
+  background-color: wheat;
+  background-image: url("https://www.transparenttextures.com/patterns/arabesque.png");
 }
 
 .avatar {
-padding: 0em 2em;
+  padding: 0em 2em;
 }
 
 .profile-name {
-  display:flex;
+  display: flex;
   justify-content: center;
-  font-family: 'Source Sans 3', sans-serif;
-}
-
-.new-tweet {
-display: flex;
-flex-direction: column;
-justify-content: center;
-padding: 3em 0em;
+  font-family: "Source Sans 3", sans-serif;
 }
 
 #name {
-display: flex;
-font-family: 'Source Sans 3', sans-serif;
-background-color: transparent;
-border: none;
-border-bottom: 5px solid #545149;
-
-}
-.new-tweet-footer{
-  padding-top:0.5em;
-  
   display: flex;
-
+  font-family: "Source Sans 3", sans-serif;
+  background-color: transparent;
+  border: none;
+  border-bottom: 5px solid #545149;
 }
-
-#submit-tweet-button {
-  display: flex;
-  flex-direction: column;
-  padding:0.2em 0.4em;
-  border:none;
-  background-color: #4056A1;
-  color:#fff;
-}
-

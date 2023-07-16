@@ -1,0 +1,25 @@
+.tweet-text-footer {
+  padding-top: 0.5em;
+  display: flex;
+  justify-content: space-between;
+}
+.counter {
+  display: flex;
+  justify-content: end;
+  align-self: center;
+}
+
+#submit-tweet-button {
+  /* display: flex; */
+  /* flex-direction: column; */
+  padding: 0.2em 0.4em;
+  border: none;
+  background-color: #4056a1;
+  color: #fff;
+}
+.tweet-text {
+  /* display: flex;
+  flex-direction: column; */
+  justify-content: center;
+  padding: 3em 0em;
+}
