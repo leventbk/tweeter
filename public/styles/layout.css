@@ -25,6 +25,7 @@ main {
   /* display: flex; */
   /* height: 100vh; */
   padding: 0em 5em;
+  padding-bottom: 4em;
   background-color: wheat;
 }
 
@@ -39,7 +40,6 @@ main {
   flex-direction: column;
   height: 520px;
   padding-top: 150px;
-  /* align-items: center; */
   background-color: wheat;
   background-image: url("https://www.transparenttextures.com/patterns/arabesque.png");
 }
@@ -54,7 +54,8 @@ main {
   font-family: "Source Sans 3", sans-serif;
 }
 
-#name {
+input {
+  width: 100%;
   display: flex;
   font-family: "Source Sans 3", sans-serif;
   background-color: transparent;
