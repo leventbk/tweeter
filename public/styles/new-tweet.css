@@ -15,7 +15,7 @@
   background-color: #4056a1;
   color: #fff;
 }
-.tweet-text {
+#new-tweet {
   justify-content: center;
   padding: 3em 0em;
 }
@@ -24,7 +24,7 @@
 .tweet-container {
   font-family: sans-serif;
   border: solid 4px;
-  padding: 0em 1em;
+  padding: 1em 1em;
   margin-top: 2em;
 
   box-shadow: 0 1px 3px rgba(64, 86, 161, 0.12),
@@ -36,9 +36,13 @@
   box-shadow: 0 14px 28px rgba(64, 86, 161, 0.25),
     0 10px 10px rgba(64, 86, 161, 0.22);
 }
-.tweet-container-header {
+.tweet-head {
   display: flex;
-  justify-content: start;
+  justify-content: space-between;
+}
+.user-data {
+  display: flex;
+  gap: 1em;
 }
 .tweet-container-footer {
   display: flex;
@@ -47,9 +51,12 @@
   /* padding-top: 1em; */
   border-top: solid 4px;
 }
-.tcb-text,
+.user-handle,
 .tcf-time {
   font-size: 0.7em;
+}
+.user-handle {
+  /* justify-content: end; */
 }
 
 .tcf-time {
