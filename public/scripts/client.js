@@ -22,11 +22,6 @@ const createTweetElement = function (tweet) {
     return div.innerHTML;
   }
 
-  // const $header = $('<header>');
-  // const $avatars = $('<img>').addClass('avatars').attr('src', tweet.avatars);;
-  // const $name = $('<span>').addClass('name').text(tweet.user.name);
-  // $header.append($avatars, $name)
-
   const $tweet = $(`
     <section class="tweet-container">
       <article>
