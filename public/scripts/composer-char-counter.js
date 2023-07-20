@@ -1,5 +1,5 @@
 $(document).ready(function () {
-  $("input").on("keyup", function () {
+  $("#tweet-text").on("keyup", function () {
     $(".counter").val(140 - $(this).val().length);
 
     // Color change to red if char size finished

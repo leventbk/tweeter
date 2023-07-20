@@ -4,15 +4,14 @@
  * Reminder: Use (and do all your DOM work in) jQuery's document ready function
  */
 // Test / driver code (temporary). Eventually will get this from the server.
-const renderTweets = function (tweets) {
-  const $tweetContainer = $('#main-tweet-container');
-  $tweetContainer.empty();
 
-  tweets.forEach(tweet => {        // calls createTweetElement for each tweet
-    const $tweetElement = createTweetElement(tweet);
-    $tweetContainer.append($tweetElement);  // takes return value and appends it to the tweets container
-  });
-}
+const renderTweets = function (arrOfTweetObj) {
+  $('#main-tweet-container').html("");
+  for (const tweetData of arrOfTweetObj.reverse()) {
+    const $tweet = createTweetElement(tweetData);
+    $('#main-tweet-container').append($tweet);
+  }
+};
 
 const createTweetElement = function (tweet) {
 
@@ -67,26 +66,27 @@ $(document).ready(function () {
   }
 
   $("#new-tweet").on("submit", function (event) {
-
+    event.preventDefault();
     if ($("#tweet-text").val().length > 140) { // To check if the text area is empty or the text is too long. 
       $('.error-message').text("Message is too long");
     } else if ($("#tweet-text").val().length === 0) {
       $('.error-message').text("Message is empty!");
     } else {
-      const serializedData = $("#new-tweet").serialize();
+      console.log("#1 submit form tweet")
+      const serializedData = $(this).serialize();
+      console.log("#2 serialized data ", serializedData)
       $.ajax({
         type: "POST",
         url: "/tweets",
         data: serializedData,
       })
-        .done(function (data) { // to load new tweet on top of the tweet-text area. Before .done function the server could not response on time. 
+        .done(function () { // to load new tweet on top of the tweet-text area. Before .done function the server could not response on time. 
           $("#tweet-text").val("")
           loadTweets();
         });
     }
-
-    event.preventDefault();
-  });
+  }
+  );
 
   loadTweets();
 });
