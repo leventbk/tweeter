@@ -1,0 +1,26 @@
+/* SMALL TO LARGE ORDER */
+@media (min-width: 320px) {
+  /* smartphones, iPhone, portrait 480x320 phones */
+  .nav {
+  }
+
+  .header {
+  }
+
+  main {
+  }
+
+  #new-tweet {
+  }
+
+  #main-tweet-container {
+  }
+}
+
+@media (min-width: 641px) {
+  /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */
+}
+
+@media (min-width: 1025px) {
+  /* big landscape tablets, laptops, and desktops */
+}
