@@ -23,4 +23,26 @@
 
 @media (min-width: 1025px) {
   /* big landscape tablets, laptops, and desktops */
+  body {
+    display: flex;
+    flex-wrap: row;
+  }
+  .nav {
+  }
+
+  .header {
+    flex: 50%;
+    padding-top: 240px;
+  }
+
+  main {
+    flex: 50%;
+    padding-top: 240px;
+  }
+
+  #new-tweet {
+  }
+
+  #main-tweet-container {
+  }
 }
