@@ -1,12 +1,6 @@
 /* SMALL TO LARGE ORDER */
 @media (min-width: 320px) and (max-width: 640px) {
   /* smartphones, iPhone, portrait 480x320 phones */
-  .nav {
-  }
-
-  .header {
-  }
-
   .avatar > img {
     width: 100%;
   }
@@ -18,12 +12,6 @@
 
   main {
     padding: 0em 2em;
-  }
-
-  #new-tweet {
-  }
-
-  #main-tweet-container {
   }
 }
 
@@ -40,9 +28,6 @@
     display: flex;
     flex-wrap: row;
   }
-  .nav {
-  }
-
   .header {
     flex: 20%;
     padding-top: 240px;
@@ -59,12 +44,5 @@
   main {
     flex: 50%;
     padding-top: 240px;
-    padding: 0em 5em;
-  }
-
-  #new-tweet {
-  }
-
-  #main-tweet-container {
   }
 }
