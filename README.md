@@ -14,6 +14,10 @@ This repository is the starter code for the project: Students will fork and clon
 
 ## Final Product
 
+!["smallscreen-view"](https://github.com/leventbk/tweeter/blob/master/public/images/Screenshot%202023-07-24%20at%206.17.06%20PM.png)
+
+!["desktop-view"](https://github.com/leventbk/tweeter/blob/master/public/images/Screenshot%202023-07-24%20at%206.16.18%20PM.png)
+
 ## Notes
 
 This project is
